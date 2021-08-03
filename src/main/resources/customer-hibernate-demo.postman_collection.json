@@ -1,0 +1,111 @@
+{
+	"variables": [],
+	"info": {
+		"name": "customer-hibernate-demo",
+		"_postman_id": "832f0167-68b7-ff4a-9f7e-baa85cde49fd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addCustomer",
+			"request": {
+				"url": "http://localhost:8080/addCustomer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\n\n\n\n\n\n\n\n\n\n\n\n{\n\t\"customerName\":\"Anilkumar Sandrapati\",\n\t\"email\":\"sandrapati.anilkumar@gmail.com\"\n}"
+				},
+				"description": "http://localhost:8080/addCustomer"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCustomers",
+			"request": {
+				"url": "http://localhost:8080/getAllCustomers",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\n\n\n\n\n\n\n\n\n\n\n\n{\n\t\"customerName\":\"Anilkumar Sandrapati\",\n\t\"email\":\"sandrapati.anilkumar@gmail.com\"\n}"
+				},
+				"description": "http://localhost:8080/addCustomer"
+			},
+			"response": []
+		},
+		{
+			"name": "updateCustomer",
+			"request": {
+				"url": "http://localhost:8080/updateCustomer",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\n\n\n\n\n\n\n\n\n\n\n\n{\n\t\"id\":1,\n\t\"customerName\":\"Sandrapati Anilkumar\",\n\t\"email\":\"sandrapati.anilkumar@gmail.com\"\n}"
+				},
+				"description": "http://localhost:8080/updateCustomer"
+			},
+			"response": []
+		},
+		{
+			"name": "getCustomerById",
+			"request": {
+				"url": "http://localhost:8080/getCustomer/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\n\n\n\n\n\n\n\n\n\n\n\n{\n\t\"customerName\":\"Anilkumar Sandrapati\",\n\t\"email\":\"sandrapati.anilkumar@gmail.com\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCustomer",
+			"request": {
+				"url": "http://localhost:8080/deleteCustomer/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\n\n\n\n\n\n\n\n\n\n\n\n{\n\t\"customerName\":\"Anilkumar Sandrapati\",\n\t\"email\":\"sandrapati.anilkumar@gmail.com\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
